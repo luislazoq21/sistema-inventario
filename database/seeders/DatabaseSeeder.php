@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Customer;
 use App\Models\Product;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -20,9 +21,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
+            IdentitySeeder::class,
             CategorySeeder::class,
         ]);
 
-        Product::factory(2)->create();
+        Customer::factory(5)->create();
+        Product::factory(100)->create();
     }
 }

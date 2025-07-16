@@ -5,7 +5,7 @@
             'href' => route('admin.dashboard')
         ],
         [
-            'name' => 'Categorias',
+            'name' => 'Categorías',
             'href' => route('admin.categories.index')
         ],
         [
